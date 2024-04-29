@@ -2,13 +2,13 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     basic.showNumber(input.lightLevel())
 })
 input.onButtonPressed(Button.A, function () {
+    input.calibrateCompass()
     basic.showArrow(ArrowNames.North)
 })
 input.onButtonPressed(Button.AB, function () {
     basic.showNumber(input.soundLevel())
 })
 input.onButtonPressed(Button.B, function () {
-    input.calibrateCompass()
     basic.showNumber(input.temperature())
 })
 basic.showString("START!")
